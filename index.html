@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise for Sreelakshmi</title>
+    <meta name="description"
+        content="A special birthday surprise interactive experience for Sreelakshmi's 24th birthday.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Scene 1: Welcome -->
+        <section id="scene-1" class="scene active">
+            <div class="content">
+                <h1 class="fade-in">A cutiepie was born today 24 years ago...</h1>
+                <button id="start-btn" class="btn bounce">Start Surprise ✨</button>
+            </div>
+        </section>
+
+        <!-- Scene 2: Cake -->
+        <section id="scene-2" class="scene">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom">
+                        <div class="frosting"></div>
+                    </div>
+                    <div class="layer layer-middle">
+                        <div class="frosting"></div>
+                        <div class="drip"></div>
+                    </div>
+                    <div class="layer layer-top">
+                        <div class="frosting"></div>
+                        <div class="drip"></div>
+                        <div class="sprinkles">
+                            <i class="s-1"></i><i class="s-2"></i><i class="s-3"></i>
+                            <i class="s-4"></i><i class="s-5"></i><i class="s-6"></i>
+                        </div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame hidden" id="flame"></div>
+                    </div>
+                </div>
+                <div class="decorations hidden" id="decorations">
+                    <div class="confetti"></div>
+                    <div class="sparkle s1"></div>
+                    <div class="sparkle s2"></div>
+                    <div class="sparkle s3"></div>
+                </div>
+                <button id="decorate-btn" class="btn">Decorate 🎂</button>
+                <button id="next-to-balloons" class="btn hidden">Next Surprise 🎈</button>
+            </div>
+        </section>
+
+        <!-- Scene 3: Balloons -->
+        <section id="scene-3" class="scene">
+            <div class="balloon-container">
+                <div class="balloon" id="b1" data-text="You">🎈</div>
+                <div class="balloon" id="b2" data-text="Are">🎈</div>
+                <div class="balloon" id="b3" data-text="A">🎈</div>
+                <div class="balloon" id="b4" data-text="Cutiee...">🎈</div>
+            </div>
+            <p class="instruction">Pop the balloons!</p>
+            <div id="pop-text" class="pop-message"></div>
+            <button id="next-to-message" class="btn hidden">Open My Message ✉️</button>
+        </section>
+
+        <!-- Scene 4: Message -->
+        <section id="scene-4" class="scene">
+            <div class="letter-container">
+                <div class="envelope" id="envelope">
+                    <div class="flap"></div>
+                    <div class="letter">
+                        <p>Dear Sreelakshmi,</p>
+                        <p>You are my best buddy!</p>
+                        <p>Stay blessed and happy birthday! 🎂✨</p>
+                        <p class="signature">With love, ❤️</p>
+                    </div>
+                </div>
+                <div class="icon-message" id="msg-icon">
+                    <span class="envelope-icon">📩</span>
+                </div>
+            </div>
+            <p class="final-wish hidden" id="final-wish">Happy 24th Birthday, Sreelakshmi!</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
